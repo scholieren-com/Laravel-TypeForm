@@ -1,12 +1,12 @@
 {
-    "name": "yo1l/laravel-typeform",
+    "name": "maxkorlaar/laravel-typeform",
     "description": "A simple Laravel Facade to retrieve typeform responses and to manage webhooks calls",
     "type": "library",
     "require": {
         "php": ">=7.0",
         "guzzlehttp/guzzle": "^6.3",
-        "laravel/framework": "~5.4",
-        "illuminate/config": "~5.4"
+        "laravel/framework": "^6.0",
+        "illuminate/config": "^6.0"
     },
     "require-dev": {
         "orchestra/testbench": "~3.0"
