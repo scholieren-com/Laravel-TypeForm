@@ -1,5 +1,5 @@
 {
-    "name": "maxkorlaar/laravel-typeform",
+    "name": "scholieren-com/laravel-typeform",
     "description": "A simple Laravel Facade to retrieve typeform responses and to manage webhooks calls",
     "type": "library",
     "require": {
