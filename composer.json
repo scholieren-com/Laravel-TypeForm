@@ -6,7 +6,7 @@
         "php": "^7.2.5",
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
-        "illuminate/config": "^6.0"
+        "illuminate/config": "^7.0"
     },
     "require-dev": {
         "orchestra/testbench": "~3.0"
