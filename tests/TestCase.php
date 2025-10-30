@@ -1,7 +1,7 @@
 <?php
 namespace Yo1L\LaravelTypeForm\Test;
 
-use use Illuminate\Foundation\Application;
+use Illuminate\Foundation\Application;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Symfony\Component\HttpFoundation\Request;
 use Yo1L\LaravelTypeForm\TypeFormServiceProvider;
