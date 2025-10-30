@@ -1,6 +1,8 @@
 <?php
 namespace Yo1L\LaravelTypeForm\Test;
 
+use Symfony\Component\HttpFoundation\Request;
+
 class TypeFormResponses
 {
     protected static function createRequest(
@@ -14,7 +16,7 @@ class TypeFormResponses
     ) {
         $request = new \Illuminate\Http\Request;
         return $request->createFromBase(
-            \Symfony\Component\HttpFoundation\Request::create(
+            Request::create(
                 $uri,
                 $method,
                 $parameters,
@@ -28,7 +30,7 @@ class TypeFormResponses
 
     public static function webhookCall()
     {
-        static::createRequest('post', static::webhookCallContent(), [
+        return static::createRequest('post', static::webhookCallContent(), [
             'CONTENT_TYPE' => 'application/json'
         ]);
     }

@@ -5,17 +5,11 @@ namespace Yo1L\LaravelTypeForm;
  *
  * @author Yo1L <kyleviavant@gmail.com>
  */
+
 use Illuminate\Support\ServiceProvider;
 
 class TypeFormServiceProvider extends ServiceProvider
 {
-    /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = false;
-
     /**
      * boot
      *

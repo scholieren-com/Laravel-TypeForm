@@ -1,9 +1,9 @@
 <?php
 namespace Yo1L\LaravelTypeForm\Test;
 
-use Yo1L\LaravelTypeForm\TypeForm;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Response;
+use Yo1L\LaravelTypeForm\TypeForm;
 
 class TypeFormTest extends TestCase
 {
@@ -33,6 +33,9 @@ class TypeFormTest extends TestCase
 
     public function testPayloadValidation()
     {
-        $this->createRequest(TypeFormResponses::webhookCall());
+        $request = TypeFormResponses::webhookCall();
+
+        $this->assertNotNull($request);
+        $this->assertEquals('POST', $request->method());
     }
 }
